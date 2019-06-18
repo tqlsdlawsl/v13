@@ -1,0 +1,26 @@
+dubbo:
+  application:
+    name: center-web
+  registry:
+    protocol: zookeeper
+    address: 47.100.170.141:2181
+
+server:
+  port: 9090
+
+spring:
+  thymeleaf:
+    cache: false
+
+fdfs:
+  so-timeout: 15000
+  connect-timeout: 60000
+  pool:
+    jmx-enabled: false
+  thumb-image:
+    width: 100
+    height: 100
+  tracker-list: 47.100.170.141:22122
+
+image:
+  server: http://47.100.170.141/

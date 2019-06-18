@@ -1,0 +1,9 @@
+server:
+  port: 9093
+
+dubbo:
+  application:
+    name: item-web
+  registry:
+    protocol: zookeeper
+    address: 47.100.170.141:2181
